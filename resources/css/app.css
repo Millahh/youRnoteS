@@ -1,0 +1,147 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jersey+25+Charted&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .main-font{
+    color:#FFA920;
+  }
+  .note-container {
+    padding:2% 5%;
+  }
+  .note-container h1{
+    color:#523302;
+  }
+  .new-note-btn {
+    display: inline-block;
+    line-height: 4rem;
+    background-color: #FFA920;
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 2px 4px darkslategray;
+  }
+  .new-note-btn:hover {
+    box-shadow: 2px 2px 6px black;
+  }
+  .new-note-btn:active {
+    position: relative;
+    top: 1px;
+  }
+  .notes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .note {
+    background-color: #FFA920;
+    border-radius: 0 30px 0 30px ;
+    margin: 0 20px 20px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: white
+  }
+  
+  .note .note-body {
+    font-family: "Inria Sans";
+    outline: 0;
+    font-size: 16px;
+    padding: 10px 10px 16px 10px;
+  }
+  .note-body .note-title{
+    border-bottom: 1px solid #ffffff3d;
+  }
+  .notes .note:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .single-note .note {
+    margin: 0;
+    width: 100%;
+  }
+  .single-note .note .note-body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 98%;
+    height: 100%;
+    border: none;
+    resize: none;
+    border-top: 1px solid #ffffff52;
+  }
+  .single-note .note .note-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 98%;
+    height: 100%;
+    border: none;
+    resize: none;
+    text-transform: uppercase;
+    font-family: "Inria Sans";
+    font-weight: 700;
+    outline: 0;
+    font-size: 24px;
+  }
+
+  .single-note .note .note-body::placeholder, .single-note .note .note-title::placeholder{
+    color: #42424258;
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  textarea:focus{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+  }
+  .note h1{
+    font-family: "Roboto";
+    text-align: right;
+    padding-right: 2%;
+    padding-top: .5%;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+  }
+  .note-buttons{
+    padding-right: 5%;
+  }
+  .note-buttons .buttons{
+    padding-right:20%;
+    padding-bottom:5%;
+    align-self: center;
+  }
+  .show-buttons{
+    padding-right:3%;
+    align-self: center;
+  }
+  .buttons:hover, .show-buttons:hover{
+    color:rgba(0, 0, 0, 0.6);
+  }
+  .note-cancel-button{
+    background-color:#FF4820;
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .note-cancel-button:hover{
+    background-color: rgb(168, 9, 9);
+  }
+  .note-submit-button{
+    background-color:#486fef;
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .note-submit-button:hover{
+    background-color: #133abc;
+  }
