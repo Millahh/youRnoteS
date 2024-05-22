@@ -5,7 +5,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::redirect('/', '/note')->name('dashboard');
+Route::get('/', function () {
+    return view('/dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 // FORM LARAVEL BREEZE
 
 // Route::get('/', function () {
